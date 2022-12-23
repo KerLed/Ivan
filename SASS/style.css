@@ -3,7 +3,15 @@
   margin: 0;
 }
 
+.first {
+  background: #000;
+  height: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .block:not(.first) {
+  padding: 20px 40px 30px 50px;
   background: #000;
   width: 300px;
   height: 200px;
@@ -15,14 +23,36 @@
   padding: 30px;
 }
 #central_block li {
+  width: 100%;
   list-style: none;
   display: inline-block;
   color: white;
 }
+#central_block li a {
+  color: yellow;
+}
+#central_block li a:hover {
+  color: blue;
+}
+#central_block li a:active {
+  color: green;
+}
+#central_block li a:visited {
+  color: red;
+}
 
-.first {
-  background: #000;
-  height: 100px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+#grid {
+  float: left;
+  width: 100%;
+}
+#grid > div {
+  float: left;
+  background: #ce3d3d;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  height: 150px;
+  width: 10.75%;
+}
+#grid > div:nth-child(8n) {
+  margin-right: 0;
 }/*# sourceMappingURL=style.css.map */
