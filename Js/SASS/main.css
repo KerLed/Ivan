@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+* > .container {
+  max-width: 1300px;
+  margin: auto;
+}
+* > .container > .header h1 {
+  font-size: 100px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+* > .container > .main {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 20px;
+}
+* > .container > .main > .Exercise > .exercise {
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+}
+* > .container > .main > .Exercise > .exercise > h2 {
+  text-align: center;
+}
+* > .container > .main > .Exercise > .exercise > button {
+  margin-top: 10px;
+  display: block;
+}/*# sourceMappingURL=main.css.map */

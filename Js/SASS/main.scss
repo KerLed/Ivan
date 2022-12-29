@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  > .container {
+    max-width: 1300px;
+    margin: auto;
+
+    > .header h1 {
+      font-size: 100px;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    > .main {
+      // display: grid;
+      // grid-template-columns: repeat(5, 20%);
+      // grid-column-gap: 20px;
+
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-column-gap: 20px;
+      > .Exercise {
+        > .exercise {
+          padding: 5px;
+          margin-bottom: 10px;
+          border: 1px solid black;
+          > h2 {
+            text-align: center;
+          }
+          > button {
+            margin-top: 10px;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
