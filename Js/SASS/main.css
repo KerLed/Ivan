@@ -11,20 +11,85 @@
   text-align: center;
   margin-bottom: 50px;
 }
-* > .container > .main {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-column-gap: 20px;
-}
-* > .container > .main > .Exercise > .exercise {
-  padding: 5px;
-  margin-bottom: 10px;
+* > .container > .main > .Acquaintance {
+  width: 100%;
   border: 1px solid black;
 }
-* > .container > .main > .Exercise > .exercise > h2 {
+* > .container > .main > .Acquaintance > h1 {
+  font-size: 70px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+* > .container > .main > .Acquaintance > .Exercise_area0 {
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  grid-column-gap: 20px;
+}
+* > .container > .main > .Acquaintance > .Exercise_area0 > .Exercise > button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 30px;
+  margin: 10px 20px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #fe6637;
+  border-radius: 8px;
+  font-family: "Montserrat", sans-serif;
+  color: #fe6637;
+  transition: 0.2s ease-in-out;
+}
+* > .container > .main > .Acquaintance > .Exercise_area0 > .Exercise > button::before {
+  content: "";
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.5));
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: -8px;
+  left: -75px;
+  transform: skewX(-45deg);
+}
+* > .container > .main > .Acquaintance > .Exercise_area0 > .Exercise > button:hover {
+  background: #fe6637;
+  color: #fff;
+}
+* > .container > .main > .Acquaintance > .Exercise_area0 > .Exercise > button:hover::before {
+  left: 150px;
+  transition: 0.5s ease-in-out;
+}
+* > .container > .main > .Acquaintance > .Exercise_area0 > .Exercise > .exercise {
+  padding: 5px;
+}
+* > .container > .main > .Acquaintance > .Exercise_area0 > .Exercise > .exercise > h2 {
   text-align: center;
 }
-* > .container > .main > .Exercise > .exercise > button {
-  margin-top: 10px;
+* > .container > .main > .Acquaintance > .Exercise_area0 > .Exercise > .exercise > button {
+  text-decoration: none;
   display: block;
+  padding: 10px 30px;
+  margin-top: 10px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #fe6637;
+  border-radius: 8px;
+  font-family: "Montserrat", sans-serif;
+  color: #fe6637;
+  transition: 0.2s ease-in-out;
+}
+* > .container > .main > .Acquaintance > .Exercise_area0 > .Exercise > .exercise > button::before {
+  content: "";
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.5));
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: -8px;
+  left: -75px;
+  transform: skewX(-45deg);
+}
+* > .container > .main > .Acquaintance > .Exercise_area0 > .Exercise > .exercise > button:hover {
+  background: #fe6637;
+  color: #fff;
+}
+* > .container > .main > .Acquaintance > .Exercise_area0 > .Exercise > .exercise > button:hover::before {
+  left: 150px;
+  transition: 0.5s ease-in-out;
 }/*# sourceMappingURL=main.css.map */
