@@ -1,4 +1,5 @@
 import AllExercise from "./js_modules/AllExercise.js";
+
 let exercise = document.getElementsByClassName("exercise");
 let Exercise = document.getElementsByClassName("Exercise");
 
@@ -9,15 +10,22 @@ function ExerciseX(x) {
   if (elem.hidden == false) {
     for (let i = 0; i < Exercise.length; i++) {
       Exercise[i].style.display = "none";
+      Exercise[i].parentNode.parentNode.style.display = "none";
     }
+    Exercise[x.slice(-1)].parentNode.style.grid = "100% / auto";
     elem.style.minHeight = "300px";
-    document.getElementById("Exercise_area0").style.grid = "100% / auto";
+
     Exercise[x.slice(-1)].style.display = "block";
+    Exercise[x.slice(-1)].parentNode.parentNode.style.display = "block";
   } else {
-    document.getElementById("Exercise_area0").style =
+    Exercise[x.slice(-1)].parentNode.style =
       "display: grid;grid-template-columns: repeat(5, 20%);grid-column-gap: 20px;";
+    // document.getElementById("Exercise_area").style =
+    //   "display: grid;grid-template-columns: repeat(5, 20%);grid-column-gap: 20px;";
     for (let i = 0; i < Exercise.length; i++) {
       Exercise[i].style = "display:block;";
+
+      Exercise[i].parentNode.parentNode.style = "block";
       // Exercise[i].style = "margin:20px 0 20px 15px";
     }
   }

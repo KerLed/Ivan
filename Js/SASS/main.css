@@ -11,21 +11,26 @@
   text-align: center;
   margin-bottom: 50px;
 }
-* > .container > .main > .Acquaintance {
+* > .container > .main > div {
+  margin-bottom: 20px;
   width: 100%;
   border: 1px solid black;
 }
-* > .container > .main > .Acquaintance > h1 {
+* > .container > .main > div > h1 {
   font-size: 70px;
   text-align: center;
   margin-bottom: 10px;
 }
-* > .container > .main > .Acquaintance > .Exercise_area0 {
+* > .container > .main > div > h1::before {
+  content: "";
+  position: absolute;
+}
+* > .container > .main > div > div {
   display: grid;
   grid-template-columns: repeat(5, 20%);
   grid-column-gap: 20px;
 }
-* > .container > .main > .Acquaintance > .Exercise_area0 > .Exercise > button {
+* > .container > .main > div > div > .Exercise > button {
   text-decoration: none;
   display: inline-block;
   padding: 10px 30px;
@@ -38,7 +43,7 @@
   color: #fe6637;
   transition: 0.2s ease-in-out;
 }
-* > .container > .main > .Acquaintance > .Exercise_area0 > .Exercise > button::before {
+* > .container > .main > div > div > .Exercise > button::before {
   content: "";
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.5));
   height: 50px;
@@ -48,21 +53,21 @@
   left: -75px;
   transform: skewX(-45deg);
 }
-* > .container > .main > .Acquaintance > .Exercise_area0 > .Exercise > button:hover {
+* > .container > .main > div > div > .Exercise > button:hover {
   background: #fe6637;
   color: #fff;
 }
-* > .container > .main > .Acquaintance > .Exercise_area0 > .Exercise > button:hover::before {
+* > .container > .main > div > div > .Exercise > button:hover::before {
   left: 150px;
   transition: 0.5s ease-in-out;
 }
-* > .container > .main > .Acquaintance > .Exercise_area0 > .Exercise > .exercise {
+* > .container > .main > div > div > .Exercise > .exercise {
   padding: 5px;
 }
-* > .container > .main > .Acquaintance > .Exercise_area0 > .Exercise > .exercise > h2 {
+* > .container > .main > div > div > .Exercise > .exercise > h2 {
   text-align: center;
 }
-* > .container > .main > .Acquaintance > .Exercise_area0 > .Exercise > .exercise > button {
+* > .container > .main > div > div > .Exercise > .exercise > button {
   text-decoration: none;
   display: block;
   padding: 10px 30px;
@@ -75,7 +80,7 @@
   color: #fe6637;
   transition: 0.2s ease-in-out;
 }
-* > .container > .main > .Acquaintance > .Exercise_area0 > .Exercise > .exercise > button::before {
+* > .container > .main > div > div > .Exercise > .exercise > button::before {
   content: "";
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.5));
   height: 50px;
@@ -85,11 +90,11 @@
   left: -75px;
   transform: skewX(-45deg);
 }
-* > .container > .main > .Acquaintance > .Exercise_area0 > .Exercise > .exercise > button:hover {
+* > .container > .main > div > div > .Exercise > .exercise > button:hover {
   background: #fe6637;
   color: #fff;
 }
-* > .container > .main > .Acquaintance > .Exercise_area0 > .Exercise > .exercise > button:hover::before {
+* > .container > .main > div > div > .Exercise > .exercise > button:hover::before {
   left: 150px;
   transition: 0.5s ease-in-out;
 }/*# sourceMappingURL=main.css.map */

@@ -1,4 +1,5 @@
 import * as exercise0_8 from "./Exercise0-8.js";
+import * as exercise9_17 from "./Exercise9-17.js";
 
 function AllExercise(i) {
   if (i == 0) {
@@ -17,6 +18,10 @@ function AllExercise(i) {
     exercise0_8.exercise6();
   } else if (i == 7) {
     exercise0_8.exercise7();
+  } else if (i == 8) {
+    exercise9_17.exercise8();
+  } else if (i == 9) {
+    exercise9_17.exercise9();
   }
 }
 export default AllExercise;
