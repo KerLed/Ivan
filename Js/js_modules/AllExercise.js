@@ -1,5 +1,5 @@
 import * as exercise0_8 from "./Exercise0-8.js";
-import * as exercise9_17 from "./Exercise9-17.js";
+import * as exercise9_17 from "./Exercise9-16.js";
 
 function AllExercise(i) {
   if (i == 0) {
@@ -22,6 +22,20 @@ function AllExercise(i) {
     exercise9_17.exercise8();
   } else if (i == 9) {
     exercise9_17.exercise9();
+  } else if (i == 10) {
+    exercise9_17.exercise10();
+  } else if (i == 11) {
+    exercise9_17.exercise11();
+  } else if (i == 12) {
+    exercise9_17.exercise12();
+  } else if (i == 13) {
+    exercise9_17.exercis13();
+  } else if (i == 14) {
+    exercise9_17.exercise14();
+  } else if (i == 15) {
+    exercise9_17.exercise15();
+  } else if (i == 16) {
+    exercise9_17.exercise16();
   }
 }
 export default AllExercise;

@@ -12,21 +12,29 @@ function ExerciseX(x) {
       Exercise[i].style.display = "none";
       Exercise[i].parentNode.parentNode.style.display = "none";
     }
-    Exercise[x.slice(-1)].parentNode.style.grid = "100% / auto";
     elem.style.minHeight = "300px";
-
-    Exercise[x.slice(-1)].style.display = "block";
-    Exercise[x.slice(-1)].parentNode.parentNode.style.display = "block";
+    if (x.length == 9) {
+      Exercise[x.slice(-1)].parentNode.style.grid = "100% / auto";
+      Exercise[x.slice(-1)].style.display = "block";
+      Exercise[x.slice(-1)].parentNode.parentNode.style.display = "block";
+    } else if (x.length == 10) {
+      Exercise[x.slice(x.length - 2)].parentNode.style.grid = "100% / auto";
+      Exercise[x.slice(x.length - 2)].style.display = "block";
+      Exercise[x.slice(x.length - 2)].parentNode.parentNode.style.display =
+        "block";
+    }
   } else {
-    Exercise[x.slice(-1)].parentNode.style =
-      "display: grid;grid-template-columns: repeat(5, 20%);grid-column-gap: 20px;";
-    // document.getElementById("Exercise_area").style =
-    //   "display: grid;grid-template-columns: repeat(5, 20%);grid-column-gap: 20px;";
+    if (x.length == 9) {
+      Exercise[x.slice(x.length - 1)].parentNode.style =
+        "display: grid;grid-template-columns: repeat(5, 20%);grid-column-gap: 20px;";
+    } else if (x.length == 10) {
+      Exercise[x.slice(x.length - 2)].parentNode.style =
+        "display: grid;grid-template-columns: repeat(5, 20%);grid-column-gap: 20px;";
+    }
     for (let i = 0; i < Exercise.length; i++) {
       Exercise[i].style = "display:block;";
 
       Exercise[i].parentNode.parentNode.style = "block";
-      // Exercise[i].style = "margin:20px 0 20px 15px";
     }
   }
 }
@@ -36,6 +44,7 @@ for (let i = 0; i < Exercise.length; i++) {
   elem.style = "margin:20px 0 20px 15px";
   elem.innerHTML = `Задание${i + 1}`;
   elem.addEventListener("click", () => ExerciseX(`exercise${i}`));
+
   Exercise[i].appendChild(elem);
 }
 for (let i = 0; i < exercise.length; i++) {
