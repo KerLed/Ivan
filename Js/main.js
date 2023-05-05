@@ -23,13 +23,16 @@ function ExerciseX(x) {
       Exercise[x.slice(x.length - 2)].parentNode.parentNode.style.display =
         "block";
     }
+    elem.parentNode.lastChild.innerHTML = "Назад";
   } else {
     if (x.length == 9) {
       Exercise[x.slice(x.length - 1)].parentNode.style =
         "display: grid;grid-template-columns: repeat(5, 20%);grid-column-gap: 20px;";
+      elem.parentNode.lastChild.innerHTML = `Задание ${x.slice(x.length - 1)}`;
     } else if (x.length == 10) {
       Exercise[x.slice(x.length - 2)].parentNode.style =
         "display: grid;grid-template-columns: repeat(5, 20%);grid-column-gap: 20px;";
+      `Задание ${x.slice(x.length - 2)}`;
     }
     for (let i = 0; i < Exercise.length; i++) {
       Exercise[i].style = "display:block;";
@@ -50,6 +53,7 @@ for (let i = 0; i < Exercise.length; i++) {
 for (let i = 0; i < exercise.length; i++) {
   let elem = document.createElement("button");
   elem.className = "btn";
+  elem.id = `btn ${i}`;
   elem.innerHTML = "Пуск";
   elem.addEventListener("click", () => AllExercise(i));
   exercise[i].appendChild(elem);
