@@ -27,6 +27,17 @@ const obj = {
     return "Метод 3";
   },
 };
+//exercise28
+let bool28;
+let d1 = [45,78,10,3]
+//exercise29
+let bool29 = true,summ2 = 0;
+let d2 = [45,78,10,3]
+//exercise30
+let bool30 = true,summ3 = 0;
+let d3 = [45,78,10,3]
+
+
 function exercise23() {
   if (bool23 != false) {
     let pRezult = document.createElement("p");
@@ -110,5 +121,54 @@ function exercise27() {
     bool27 = !bool27;
   }
 }
+function exercise28() {
+  if (bool28 != false) {
+    d1[7] = 100
+    let pRezult = document.createElement("p");
+    pRezult.id = "exer28";
+    pRezult.style = "margin-top:10px; font-size:20px";
+    pRezult.innerText = `Весь массив = ${d1}\n d1[6] = ${d1[6]}\n d1[7] = ${d1[7]}`;
+    document.getElementById("exercise28").appendChild(pRezult);
+    bool28 = !bool28;
+  } else {
+    document.getElementById("exer28").remove();
+    bool28 = !bool28;
+  }
+}
+function exercise29() {
+  if (bool29 != false) {
+    for (let i = 0;i<d2.length;i++){
+      summ2 += d2[i] 
+    }
+    let pRezult = document.createElement("p");
+    pRezult.id = "exer29";
+    pRezult.style = "margin-top:10px; font-size:20px";
+    pRezult.innerText = `Сумма элементов массива = ${summ2}`;
+    document.getElementById("exercise29").appendChild(pRezult);
+    bool29 = !bool29;
+  } else {
+    document.getElementById("exer29").remove();
+    summ2 = 0
+    bool29 = !bool29;
+  }
+}
+function exercise30() {
+  if (bool30 != false) {
+    d3[4] = 100;
+    for (let key in d3){
+      summ3 += d3[key] 
+    }
+    let pRezult = document.createElement("p");
+    pRezult.id = "exer30";
+    pRezult.style = "margin-top:10px; font-size:20px";
+    pRezult.innerText = `Сумма элементов массива = ${summ3}`;
+    document.getElementById("exercise30").appendChild(pRezult);
+    bool30 = !bool30;
+  } else {
+    document.getElementById("exer30").remove();
+    summ3 = 0
+    bool30 = !bool30;
+  }
+}
 
-export { exercise23, exercise24, exercise25, exercise26, exercise27 };
+export { exercise23, exercise24, exercise25, exercise26, exercise27, exercise28,exercise29,exercise30 };

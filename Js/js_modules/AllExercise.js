@@ -60,6 +60,12 @@ function AllExercise(i) {
     exercise23_32.exercise26();
   } else if (i == 27) {
     exercise23_32.exercise27();
+  } else if (i == 28) {
+    exercise23_32.exercise28();
+  }else if (i == 29) {
+    exercise23_32.exercise29();
+  }else if (i == 30) {
+    exercise23_32.exercise30();
   }
 }
 export default AllExercise;
