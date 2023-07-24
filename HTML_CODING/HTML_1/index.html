@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Discover Amazing places in Japan</title>
-  <link rel="stylesheet" href="./css_scss/style.css">
+  <link rel="stylesheet" href=".//css/style.css">
 </head>
 <body>  
   <!-- Header start -->
@@ -19,23 +19,34 @@
         <nav class="header_nav">
           <ul class="header_list">
             <li class="header_item">
-              <a href="!#" class="header_link">Articles</a>
+              <a href="#articles" class="header_link js-scroll">Articles</a>
             </li>
 
             <li class="header_item">
-              <a href="!#" class="header_link">Locations</a>
+              <a href="#locations" class="header_link js-scroll">Locations</a>
             </li>
 
             <li class="header_item">
-              <a href="!#" class="header_link">Videos</a>
+              <a href="#videos" class="header_link js-scroll">Videos</a>
             </li>
 
             <li class="header_item">
-              <a href="!#" class="header_link">Sign in</a>
+              <a href="#sign_in" class="header_link js-scroll">Sign in</a>
             </li>
             
           </ul>
+          <div class="header_nav_close">
+            <span class="header_nav_close_line"></span>
+            <span class="header_nav_close_line"></span>
+
+            
+          </div>
         </nav>
+        <div id="header_burger" class="header_burger burger">
+          <span class="burger_line burger_line_first"></span>
+          <span class="burger_line burger_line_second"></span>
+          <span class="burger_line burger_line_third"></span>
+        </div>
       </div>
     </header>
     <!-- Header end -->
@@ -46,7 +57,7 @@
 
       <!-- intro start -->
 
-      <section class="intro">
+      <section class="intro" id="sign_in">
 
         <div class="wrapper">
 
@@ -158,7 +169,7 @@
         <div class="wrapper_full">
           <div class="places_caption">
             <h2 class="places_title section_title">
-            Get inspired for your next trip
+            Get inspired for your next trip 
             </h2>
             <a href="#!" class="places_viev_all">VIEV ALL</a>
           </div>
@@ -166,7 +177,7 @@
           <div class="places_cards">
           
             <figure class="places_card places_card_size_lg">
-              <img class="places_card_pic places_card_pic_size_lg" src="./image/places_MountFuji.jpg" alt="Mount Fuji">
+              <img class="places_card_pic places_card_pic_size_lg" src="./image/places_MountFuji-min.jpg" alt="Mount Fuji">
               <figcaption class="places_card_title">
                 Mount Fuji  
               </figcaption>
@@ -174,7 +185,7 @@
             </figure>
 
              <figure class="places_card places_card_size_lg">
-              <img class="places_card_pic places_card_pic_size_lg" src="./image/places_Kyoto.jpg" alt="Kyoto">
+              <img class="places_card_pic places_card_pic_size_lg" src="./image/places_Kyoto-min.jpg" alt="Kyoto">
               <figcaption class="places_card_title">
                 Kyoto
               </figcaption>
@@ -182,7 +193,7 @@
             </figure>
 
             <figure class="places_card places_card_size_sm">
-              <img class="places_card_pic places_card_pic_size_sm" src="./image/places_Tokyo.jpg" alt="Tokyo">
+              <img class="places_card_pic places_card_pic_size_sm" src="./image/places_Tokyo-min.jpg" alt="Tokyo">
               <figcaption class="places_card_title">
                 Tokyo
               </figcaption>
@@ -190,7 +201,7 @@
             </figure>
 
             <figure class="places_card places_card_size_sm">
-              <img class="places_card_pic places_card_pic_size_sm" src="./image/places_Niigata.jpg" alt="Niigata">
+              <img class="places_card_pic places_card_pic_size_sm" src="./image/places_Niigata-min.jpg" alt="Niigata">
               <figcaption class="places_card_title">
                 Niigata
               </figcaption>
@@ -198,7 +209,7 @@
             </figure>
 
             <figure class="places_card places_card_size_sm">
-              <img class="places_card_pic places_card_pic_size_sm" src="./image/places_Sapporo.jpg" alt="Sapporo">
+              <img class="places_card_pic places_card_pic_size_sm" src="./image/places_Sapporo-min.jpg" alt="Sapporo">
               <figcaption class="places_card_title">
                 Sapporo
               </figcaption>
@@ -210,13 +221,13 @@
       <!-- places end -->
 
       <!-- start tours -->
-      <div class="tours">
+      <div class="tours" id="articles">
 
         <div class="wrapper_full">
           <div class="tours_tour tour">
 
               <div class="tuor_pic">
-                <img src="./image/tour1.jpg" alt="Prefecture in Focus: Tottori" class="tour_tumb">
+                <img src="./image/tour1-min.jpg" alt="Prefecture in Focus: Tottori" class="tour_tumb">
               </div>
 
               <div class="tour_info">
@@ -247,7 +258,7 @@
                 </a>
               </div>
               <div class="tuor_pic">
-                <img src="./image/tour1.jpg" alt="Prefecture in Focus: Tottori" class="tour_tumb">
+                <img src="./image/tour2-min.jpg" alt="Prefecture in Focus: Tottori" class="tour_tumb">
               </div>
 
           </div>
@@ -256,7 +267,7 @@
       <!-- end tours -->
 
       <!-- start top places to visit -->
-      <section class="top">
+      <section class="top" id="locations">
         <div class="wrapper_full">
           <h2 class="top_title section_title">
             Today top places to visit
@@ -265,7 +276,7 @@
           <div class="top_cards">
             <div class="top_card">
               <div class="top_card_pick">
-                <img src="./image/top_places_1.jpg" alt="NAGOYA" class="top_card_thumb">
+                <img src="./image/top_places_1-min.jpg" alt="NAGOYA" class="top_card_thumb">
 
                 <div class="top_card_stats">
                   <h3 class="top_card_title">
@@ -295,7 +306,7 @@
 
             <div class="top_card">
               <div class="top_card_pick">
-                <img src="./image/top_places_2.jpg" alt="NIIGATA" class="top_card_thumb">
+                <img src="./image/top_places_2-min.jpg" alt="NIIGATA" class="top_card_thumb">
 
                 <div class="top_card_stats">
                   <h3 class="top_card_title">
@@ -325,7 +336,7 @@
 
             <div class="top_card">
               <div class="top_card_pick">
-                <img src="./image/top_places_3.jpg" alt="OSAKA" class="top_card_thumb">
+                <img src="./image/top_places_3-min.jpg" alt="OSAKA" class="top_card_thumb">
 
                 <div class="top_card_stats">
                   <h3 class="top_card_title">
@@ -355,7 +366,7 @@
 
             <div class="top_card">
               <div class="top_card_pick">
-                <img src="./image/top_places_4.jpg" alt="SAITAMA" class="top_card_thumb">
+                <img src="./image/top_places_4-min.jpg" alt="SAITAMA" class="top_card_thumb">
 
                 <div class="top_card_stats">
                   <h3 class="top_card_title">
@@ -385,7 +396,7 @@
 
             <div class="top_card">
               <div class="top_card_pick">
-                <img src="./image/top_places_5.jpg" alt="UENO" class="top_card_thumb">
+                <img src="./image/top_places_5-min.jpg" alt="UENO" class="top_card_thumb">
 
                 <div class="top_card_stats">
                   <h3 class="top_card_title">
@@ -415,7 +426,7 @@
 
             <div class="top_card">
               <div class="top_card_pick">
-                <img src="./image/top_places_6.jpg" alt="SHIBUYA" class="top_card_thumb">
+                <img src="./image/top_places_6-min.jpg" alt="SHIBUYA" class="top_card_thumb">
 
                 <div class="top_card_stats">
                   <h3 class="top_card_title">
@@ -452,7 +463,7 @@
       <!-- end top places to visit -->
 
       <!-- start video -->
-        <div class="video">
+        <div class="video" id="videos">
           <div class="video_wrapper">
             <div class="video_item"></div>
             <iframe class="video_element"  src="https://www.youtube.com/embed/uQX8UwV87Os" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -564,6 +575,7 @@
     </footer>    
 
     <!--end foter-->
+    
     <script src="./js/main.js"></script>
 </body>
 </html> 
