@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body > #root {
+  display: flex;
+  justify-content: center;
+}
+body > #root > .App {
+  width: 800px;
+  margin: auto;
+}
+body > #root > .App > .counter {
+  margin-top: 40px;
+}
+body > #root > .App > .inp_title_block {
+  margin-top: 40px;
+}
+body > #root > .App > .inp_title_block > .input__title {
+  margin-top: 40px;
+}
+body > #root > .App > .post_list > .post_list_title {
+  margin-bottom: 15px;
+}
+body > #root > .App > .post_list > .posts {
+  margin: 0 10px 10px 10px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+body > #root > .App > .post_list > .posts > .post__content {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border: 2px solid #000;
+}
+body > #root > .App > .post_list > .posts > .post__content > .post__description {
+  padding: 5px;
+}
+body > #root > .App > .post_list > .posts > .post__content > .post__description > p {
+  display: inline-block;
+}
+body > #root > .App > .post_list > .posts > .post__content > .post__btns {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}/*# sourceMappingURL=App.css.map */

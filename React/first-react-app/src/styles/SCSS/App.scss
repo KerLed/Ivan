@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  > #root {
+    display: flex;
+    justify-content: center;
+
+    > .App {
+      width: 800px;
+      margin: auto;
+
+      > .counter {
+        margin-top: 40px;
+      }
+
+      > .inp_title_block {
+        margin-top: 40px;
+        > .input__title {
+          margin-top: 40px;
+        }
+      }
+
+      > .post_list {
+        > .post_list_title {
+          margin-bottom: 15px;
+        }
+
+        > .posts {
+          margin: 0 10px 10px 10px;
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+
+          > .post__content {
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            border: 2px solid #000;
+
+            > .post__description {
+              padding: 5px;
+              > p {
+                display: inline-block;
+              }
+            }
+            > .post__btns {
+              position: absolute;
+              right: 5px;
+              top: 50%;
+              transform: translateY(-50%);
+            }
+          }
+        }
+      }
+    }
+  }
+}
