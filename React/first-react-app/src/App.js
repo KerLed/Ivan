@@ -16,7 +16,7 @@ function App() {
     <div className="App">
       <Counter />
       <InputTitle />
-      <Addpostform />
+      <Addpostform posts={posts} setposts={setposts} />
       <PostList posts={posts} title="Посты по JS" />
     </div>
   );

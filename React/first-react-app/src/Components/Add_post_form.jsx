@@ -1,14 +1,20 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import MyButton from "./UI/button/MyButton";
 import MyInput from "./UI/input/MyInput";
 
-const AddPostForm = () => {
+const AddPostForm = (props) => {
   const [title, setTitle] = useState("");
-  const bodyInputRef = useRef();
+  const [body, setBody] = useState("");
   const addNewPost = (e) => {
     e.preventDefault();
-    console.log(title);
-    console.log(bodyInputRef.current.value);
+    const newPost = {
+      id: Date.now(),
+      title,
+      body,
+    };
+    props.setposts([...props.posts, newPost]);
+    setTitle("");
+    setBody("");
   };
 
   return (
@@ -20,7 +26,12 @@ const AddPostForm = () => {
           type="text"
           placeholder="Название поста"
         />
-        <MyInput ref={bodyInputRef} type="text" placeholder="Описание поста" />
+        <MyInput
+          value={body}
+          onChange={(e) => setBody(e.target.value)}
+          type="text"
+          placeholder="Описание поста"
+        />
         <MyButton onClick={addNewPost}>Создать пост</MyButton>
       </form>
     </div>
