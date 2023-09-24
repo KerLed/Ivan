@@ -6,3 +6,6 @@
   border: 1px solid teal;
   cursor: pointer;
 }
+.mybtn:hover {
+  background-color: greenyellow;
+}

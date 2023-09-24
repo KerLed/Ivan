@@ -29,7 +29,6 @@ body {
 
         > .add_post_form {
           border: 1px solid black;
-          align-items: center;
 
           > input {
             margin: 10px;
@@ -53,13 +52,13 @@ body {
           grid-template-columns: repeat(1, 1fr);
 
           > .post__content {
+            padding: 10px;
             position: relative;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             border: 2px solid #000;
 
             > .post__description {
-              padding: 5px;
               > p {
                 display: inline-block;
               }

@@ -12,12 +12,22 @@ function App() {
     { id: 3, title: "JavaScript 3", body: "Description" },
   ]);
 
+  const removePost = (post) => {
+    setposts(posts.filter((p) => p.id !== post.id));
+  };
+
   return (
     <div className="App">
       <Counter />
       <InputTitle />
       <Addpostform posts={posts} setposts={setposts} />
-      <PostList posts={posts} title="Посты по JS" />
+      {posts.length !== 0 ? (
+        <PostList remove={removePost} posts={posts} title="Посты по JS" />
+      ) : (
+        <h1 style={{ textAlign: "center", marginTop: "20px" }}>
+          Посты не найдены{" "}
+        </h1>
+      )}
     </div>
   );
 }

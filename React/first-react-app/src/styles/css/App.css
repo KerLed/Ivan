@@ -26,7 +26,6 @@ body > #root > .App > .add_post {
 }
 body > #root > .App > .add_post > .add_post_form {
   border: 1px solid black;
-  align-items: center;
 }
 body > #root > .App > .add_post > .add_post_form > input {
   margin: 10px;
@@ -45,13 +44,11 @@ body > #root > .App > .post_list > .posts {
   grid-template-columns: repeat(1, 1fr);
 }
 body > #root > .App > .post_list > .posts > .post__content {
+  padding: 10px;
   position: relative;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   border: 2px solid #000;
-}
-body > #root > .App > .post_list > .posts > .post__content > .post__description {
-  padding: 5px;
 }
 body > #root > .App > .post_list > .posts > .post__content > .post__description > p {
   display: inline-block;
