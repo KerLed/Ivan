@@ -21,6 +21,21 @@ body > #root > .App > .inp_title_block {
 body > #root > .App > .inp_title_block > .input__title {
   margin-top: 40px;
 }
+body > #root > .App > .add_post {
+  margin-top: 15px;
+}
+body > #root > .App > .add_post > .add_post_form {
+  border: 1px solid black;
+  align-items: center;
+}
+body > #root > .App > .add_post > .add_post_form > input {
+  margin: 10px;
+  display: block;
+}
+body > #root > .App > .add_post > .add_post_form > button {
+  display: block;
+  margin: 10px;
+}
 body > #root > .App > .post_list > .post_list_title {
   margin-bottom: 15px;
 }

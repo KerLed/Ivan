@@ -24,6 +24,24 @@ body {
         }
       }
 
+      > .add_post {
+        margin-top: 15px;
+
+        > .add_post_form {
+          border: 1px solid black;
+          align-items: center;
+
+          > input {
+            margin: 10px;
+            display: block;
+          }
+          > button {
+            display: block;
+            margin: 10px;
+          }
+        }
+      }
+
       > .post_list {
         > .post_list_title {
           margin-bottom: 15px;
