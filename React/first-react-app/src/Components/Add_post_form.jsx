@@ -3,32 +3,27 @@ import MyButton from "./UI/button/MyButton";
 import MyInput from "./UI/input/MyInput";
 
 const AddPostForm = (props) => {
-  const [title, setTitle] = useState("");
-  const [body, setBody] = useState("");
+  const [post, setpost] = useState({ title: "", body: "" });
   const addNewPost = (e) => {
     e.preventDefault();
-    const newPost = {
-      id: Date.now(),
-      title,
-      body,
-    };
-    props.setposts([...props.posts, newPost]);
-    setTitle("");
-    setBody("");
+
+    props.setposts([...props.posts, { ...post, id: Date.now() }]);
+
+    setpost({ title: "", body: "" });
   };
 
   return (
     <div className="add_post">
       <form className="add_post_form">
         <MyInput
-          value={title}
-          onChange={(e) => setTitle(e.target.value)}
+          value={post.title}
+          onChange={(e) => setpost({ ...post, title: e.target.value })}
           type="text"
           placeholder="Название поста"
         />
         <MyInput
-          value={body}
-          onChange={(e) => setBody(e.target.value)}
+          value={post.body}
+          onChange={(e) => setpost({ ...post, body: e.target.value })}
           type="text"
           placeholder="Описание поста"
         />
