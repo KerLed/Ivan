@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* > body {
+  background-color: black;
+  color: white;
+}
+* > body > #root > .name > .header {
+  background-color: white;
+  color: black;
+  padding: 20px;
+}/*# sourceMappingURL=main.css.map */
